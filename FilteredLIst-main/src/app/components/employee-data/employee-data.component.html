@@ -1,0 +1,30 @@
+
+<div class="container">
+
+
+<ul class = " employees_list "> 
+
+<!-- If filtered value is false which is initialised as default it will render employees that are not filtered-->
+    @if(!isfiltered ){
+        <h2> This is the list of  All Employees </h2>
+@for (employee of employee_details; track employee.employee_id) {
+   
+     <li class=" list_items"> {{employee.name}} </li>
+       
+    }
+}
+
+<!-- Else it should render the filtered employees -->
+@else{
+    <h2> NaaBalik Bacche </h2>
+    @for (employee of filteredemp; track $index) {
+
+        <li class=" list_items"> {{employee.name}} </li>
+          
+       }
+}
+</ul>
+<!-- Correct event binding on click -->
+<button (click)="submit()"> Filter </button>
+
+</div>

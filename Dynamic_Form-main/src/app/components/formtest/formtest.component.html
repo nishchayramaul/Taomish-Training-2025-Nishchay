@@ -1,0 +1,38 @@
+
+
+<div class="formcontainer">
+
+
+
+<!-- Using event binding conecpt  in submit -->
+<form [formGroup]="testform"  (submit) ="submit()" >
+
+    <div class="formvalues">
+    <label for="firstname">First Name</label>
+    <input id="firstname" formControlName="firstname" />
+     </div>
+
+
+   
+    <div class="formvalues">
+    <label for="lastname">Last Name</label>
+    <input id="lastname" formControlName="lastname" />
+    </div>
+    
+    <div class="formvalues">
+    <label for="age">Age</label>
+    <input id="age" formControlName="age" type="number" />
+    </div>
+  
+    <div class="formvalues">
+      <label for="city">Age</label>
+      <select options = "options" formControlName="city" type="number" >
+        <!-- Conecpt of decorators -->
+      @for( city of city; track $index){
+        <option [value]="city">{{city}}</option>
+      }
+    </select>
+      </div>
+    <button type="submit" [disabled]="testform.invalid">Submit</button>
+  </form>
+</div>
