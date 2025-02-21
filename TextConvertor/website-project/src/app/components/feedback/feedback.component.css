@@ -1,0 +1,13 @@
+.pipecontainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    margin : 3vw;
+}
+
+select{
+    margin : 1vw;
+}

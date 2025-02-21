@@ -1,0 +1,18 @@
+
+<div class="pipecontainer">
+
+
+<h1>Text Convertor</h1>
+<input type = "text"  [(ngModel)]="input" placeholder="write the text here"/>
+
+    <select [(ngModel)]= "selected" default = "titleCase" >
+    <option value="titlecase"> Title Case </option>
+    <option value="camelcase">Camel Case</option>
+    <option value="uppercase">Upper Case</option>
+    <option value="lowercase">Lower Case</option>
+    </select>
+
+<p> Here is the format text and default value is title case : {{formatText()}}</p>
+
+
+</div>

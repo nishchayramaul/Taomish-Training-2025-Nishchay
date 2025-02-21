@@ -1,0 +1,7 @@
+button{
+margin-left:1vw;
+}
+.btncontainer{
+    display: flex;
+    justify-content: center;
+}

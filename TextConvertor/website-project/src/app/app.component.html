@@ -1,0 +1,16 @@
+
+<div class="homecontainer">
+  <div class="navbar">
+      <ul class="navlist">
+          @for(item of navitems; track $index)
+          {
+          <li class="list-items"  >  
+                  <a [style.color] = "color" routerLink = "{{item}}">{{item}} </a>
+          </li>
+          }
+          
+      </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

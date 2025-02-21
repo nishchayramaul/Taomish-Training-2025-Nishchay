@@ -1,0 +1,17 @@
+.homecontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.list-items{
+ list-style: none;
+  padding : 1vw;
+}
+ ul{
+    display: flex;  
+ }
+
+ a{
+    text-decoration: none;
+ }
+ 
